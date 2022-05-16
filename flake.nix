@@ -20,7 +20,7 @@
       nixVulkanIntel = pkgs.nixVulkanIntel;
     };
     
-    pure = args: import ./default.nix ({ inherit pkgs; } // args)
+    pure = args: import ./default.nix ({ inherit pkgs; } // args);
 
     # deprecated attributes for retro compatibility
     defaultPackage.x86_64-linux = packages.x86_64-linux.default;
